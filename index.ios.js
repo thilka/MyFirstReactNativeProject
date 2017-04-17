@@ -12,51 +12,13 @@ import {
   View
 } from 'react-native';
 
-import ShoppingList from './common/shoppinglist'
+import App from './common/app'
 import HandleListItems from './common/handlelistitems'
 
 export default class MyFirstReactNativeProject extends Component {
-  constructor() {
-    super();
-    shoppingListItems = [
-        {
-          name: 'bread',
-          quantity: 1
-        },
-        {
-          name: 'chocolate',
-          quantity: 1000
-        },
-        {
-          name: 'milk',
-          quantity: 3
-        }
-      ];
-    this.state = {
-      listItems : shoppingListItems
-    }
-  }
-
   render() {
-      const handleAdd = () => {
-          this.state.listItems.push({
-                name: 'new',
-                quantity: 10
-            });
-          this.setState(this.state)
-          
-        }; 
-        const handleRemove = () => {
-          this.state.listItems.pop();
-          this.setState(this.state)
-          
-        }; 
-
     return (
-      <View>
-        <ShoppingList items={shoppingListItems}/>
-        <HandleListItems items={shoppingListItems} handleAdd={handleAdd} handleRemove={handleRemove}/>
-      </View>
+      <App/>
     );
   }
 }
