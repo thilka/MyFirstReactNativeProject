@@ -16,18 +16,9 @@ class HandleListItems extends Component {
 }
 
 const styles = StyleSheet.create({
-    button: {
-        alignSelf: 'flex-end',
-        padding: 100,
-        borderColor: '#ededed',
-        borderWidth: 10,
-        borderRadius: 4,
-        marginRight: 50,
-    },
     buttons: {
         flexDirection: 'row',
         justifyContent: 'space-around'
-    //     alignItems: 'center'
     },
 })
 
