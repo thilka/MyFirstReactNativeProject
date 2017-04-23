@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import { Text, View, Button, StyleSheet } from 'react-native';
 
-class HandleListItems extends Component {
+export default class HandleListItems extends Component {
 
-    render() {        
+    render() {
         const { items, handleAdd, handleRemove } = this.props
-        
+
         return (
             <View style={styles.buttons} >
                 <Button onPress={handleAdd} title='Add'/>
@@ -21,5 +21,3 @@ const styles = StyleSheet.create({
         justifyContent: 'space-around'
     },
 })
-
-export default HandleListItems

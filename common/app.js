@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
-import {
-  AppRegistry,
-  View
-} from 'react-native';
+import { View } from 'react-native';
 
 import ShoppingList from './shoppinglist'
 import HandleListItems from './handlelistitems'
@@ -36,13 +33,13 @@ export default class App extends Component {
                 quantity: 10
             });
           this.setState(this.state)
-          
-        }; 
+
+        };
         const handleRemove = () => {
           this.state.listItems.pop();
           this.setState(this.state)
-          
-        }; 
+
+        };
 
     return (
       <View>
@@ -52,5 +49,3 @@ export default class App extends Component {
     );
   }
 }
-
-AppRegistry.registerComponent('MyFirstReactNativeProject', () => MyFirstReactNativeProject);

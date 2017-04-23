@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { Text, View } from 'react-native';
 
-class ShoppingList extends Component {
+export default class ShoppingList extends Component {
 
-    render() {        
+    render() {
         const { items } = this.props
         itemView = this.buildItemList()
         return (
@@ -28,5 +28,3 @@ class ShoppingList extends Component {
         return itemView;
     }
 }
-
-export default ShoppingList
